@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'powerDancer'
+version '0.1-SNAPSHOT'
+
+sourceCompatibility = 1.10
+targetCompatibility = 1.10
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'org.slf4j:slf4j-api:1.7.25'
+
+    testImplementation(
+            'org.junit.jupiter:junit-jupiter-api:5.1.0'
+    )
+    testRuntimeOnly(
+            'org.slf4j:slf4j-simple:1.7.25',
+            'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+    )
+}
